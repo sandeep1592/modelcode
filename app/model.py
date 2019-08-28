@@ -41,7 +41,7 @@ print("Elasticnet model (alpha=%f, l1_ratio=%f):" % (alpha, l1_ratio))
 print("  RMSE: %s" % rmse)
 print("  MAE: %s" % mae)
 print("  R2: %s" % r2)
-pickle.dump(lr, open("/home/ec2-user/mlscale/model_dir/pickle_model.pkl", 'wb'))
+pickle.dump(lr, open("/home/ec2-user/mlscale/model_repo/pickle_model.pkl", 'wb'))
 
 
 
