@@ -6,7 +6,6 @@ RUN apt-get update -y && \
     apt-get install -y python2.7 python-pip
 
 COPY ./requirements.txt /requirements.txt
-COPY ./pickle_model.pkl /pickle_model.pkl
 
 WORKDIR /
 
@@ -16,4 +15,4 @@ COPY . /
 
 ENTRYPOINT [ "python" ]
 
-CMD [ "app/app.py" ]
+CMD [ "app/model.py" ]
