@@ -21,7 +21,7 @@ if __name__ == "__main__":
 	
     # Read the wine-quality csv file (make sure you're running this from the root of MLflow!)
     #wine_path = os.path.join(os.path.dirname(os.path.abspath("/home/ec2-user/mlscale/data/winequality.csv")), "winequality.csv")
-    data = pd.concat(map(pd.read_csv, glob.glob(os.path.join('/home/ec2-user/mlscale/data', "winequality*.csv"))))
+    data = pd.concat(map(pd.read_csv, glob.glob(os.path.join('/data', "winequality*.csv"))))
     #data = pd.read_csv(wine_path)
 	
     # Split the data into training and test sets. (0.75, 0.25) split.
